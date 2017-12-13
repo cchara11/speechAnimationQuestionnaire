@@ -1,0 +1,40 @@
+<script>
+    function firstExperiment()
+        {
+            $(function(){
+                $("#renderPage").load("page1.html");
+                $('#firstExperiment').remove();
+            });
+        }
+</script>
+<div class="col-md-12">
+    <p>
+        <strong>
+            The purpose of the currrent questionnaire is to evaluate a custom lip-sync animation component that was implemented as part
+            of a Master's Thesis project. 
+            The component will be compared against two commercial lip-sync animation programms
+            <br>
+            <p>
+            The questionnaire is divided into two parts, each one consists of 34 scenarios. There are multiple scenarios for female models as well as multiple scenarios for male models.
+            In each scenario you will choose your preffered animation. 
+            </p>
+            <br>
+            <p style="color:rgb(146, 55, 55)">Your preference should be based on the following parameters:</p>
+            <ul>
+                <li><p style="color:rgb(146, 55, 55)">The animation looks natural</p></li>
+                <li><p style="color:rgb(146, 55, 55)">The animation is synchronized with the audio</p></li>
+            </ul> 
+            <br>
+            <p style="font-size:30px">IMPORTANT NOTE:</p> <p>There are some videos that have different rendering. Since the purpose of the questionnaire is to evaluate 
+            the mouth during animation, please ignore the model's appearance and focus only on the mouth part.</p>
+        </strong>
+    </p>
+</div>
+<div class="col-md-12">
+    <hr>
+</div>
+<div class="row" id="firstExperiment">
+    <div class="col-md-12 text-center">
+        <button class="button" type="button" onclick="firstExperiment()">Begin Experiment</button>
+    </div>
+</div>

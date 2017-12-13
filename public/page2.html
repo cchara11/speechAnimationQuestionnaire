@@ -1,0 +1,30 @@
+<head>
+    <script>
+        $(function () {
+            $("#content1").load("content1.html");
+        });
+    </script>
+    <script src="js/readUserInput.js"></script>
+</head>
+<div class="col-md-12">
+    <h2>
+        <strong>Part 2</strong>
+    </h2>
+</div>
+<div class="col-md-12">
+    <hr>
+    <h3 style="font-weight: bold">The questionnaire is divided into two parts, each part consists of 34 cases. In each case, you will watch two videos and choose the best one.</h3>
+    <hr>
+    <h3 style="color:rgb(146, 55, 55); font-weight:bold">Please pay attention that some virtual characters have a different look. Please ignore these differences and focus on the mouth animation.</h3>  
+</div>
+<div id="content1"></div>
+<br>
+<hr>
+<div class="col-md-12">
+    <hr>
+</div>
+<div class="row" id="proceed-final-button">
+    <div class="col-md-12 text-center">
+        <button class="button" type="button" onclick="validate('thankYou.html')">End Experiment</button>
+    </div>
+</div>

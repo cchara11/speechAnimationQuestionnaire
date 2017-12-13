@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Audio-driven Speech Animation for Virtual Characters</title>
+    <meta name="decription" content="">
+    <meta name="author" content="Constantinos Charalambous">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="icon" type="image/png" href="temp">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("#renderPage").load("consent.html");
+        });
+    </script>
+    <script>
+        function agree()
+        {
+            $(function(){
+                $("#renderPage").load("demographics.html");
+                $('#agree-button').remove();
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Portfolio Section -->
+    <div class="scenario">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><strong>Audio-driven Speech Animation for Virtual Characters</strong></h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div id="renderPage"></div>
+            </div>
+            <br>
+            <hr>
+            <div class="row" id="agree-button">
+                <div class="col-md-12 text-center">
+                    <button class="button" type="button" onclick="agree()">Agree</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    Created By Constantinos Charalambous, 2017
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('#monitor').html($(window).width());
+        $(window).resize(function () {
+            var viewportWidth = $(window).width();
+            $('#monitor').html(viewportWidth);
+        });
+        $(window).scroll(function () {
+            var wScroll = $(this).scrollTop();
+            $('.gamepadDiv').css({
+                transform: 'translate(0px, -' + wScroll / 5 + '%)'
+            });
+            $('.codeDiv').css({
+                transform: 'translate(0px, +' + wScroll / 5 + '%)'
+            });
+        });
+    </script>
+</body>
+
+</html>

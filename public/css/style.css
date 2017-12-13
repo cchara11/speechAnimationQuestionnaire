@@ -1,0 +1,491 @@
+@charset "UTF-8";
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/*
+::-webkit-scrollbar {
+    display: none;
+}
+*/
+
+article,
+header,
+footer,
+menu,
+section {
+    display: block;
+}
+
+* {    
+    font-family: 'Poiret One', cursive;
+}
+
+h1 {
+    font-size: 48px !important;
+}
+
+h2 {
+    font-size: 40px !important;
+}
+
+a {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+p {
+    font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+    .nav li a:after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 30%;
+        right: 0;
+        background: #fff;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .nav li a:before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 30%;
+        left: 0;
+        background: #fff;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav li {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+.nav li:first-child a:before {
+    width: 0px;
+}
+
+.nav li:last-child a:after {
+    width: 0px;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; 
+}
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+#mainContainer{
+    height: 100%;
+    width: 100%;
+    /*overflow: hidden;*/
+}
+
+#mainContent{
+    width: 100%;
+    height: 99%;
+    overflow: auto;
+}
+
+.main {
+    position: relative;
+    background-image: url("../img/gray_background.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    /*overflow: hidden;*/
+    padding-top:70px;
+    padding-bottom:10px;
+}
+
+.background {
+    position: relative;
+    background-image: linear-gradient(rgba(133, 133, 133, 0.5),rgba(65, 67, 70, 0.5)), url("../img/misc/briefcase_cap.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    /*overflow: hidden;*/
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    /*overflow: hidden;*/
+    border-radius: 70%;
+    margin-top: 30px;
+}
+
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.about {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.programming{
+    position: relative;
+    background: white;
+    /*overflow: hidden;*/
+}
+
+.scenario {
+    position: relative;
+    /*background-image: linear-gradient(rgba(1,101,252,0.5),rgba(1,101,252,0.3)), url("../img/portfolio_background.jpg");*/
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(65, 67, 70, 0.5)), url("../img/gray_background.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    /*overflow: hidden;*/
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contact {
+    position: relative;
+    background: black;
+    /*overflow: hidden;*/
+}
+
+.scenarioItem {
+    background-color: blue;
+    margin-bottom: 25px;    
+}
+
+article{
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mainRow{
+    height: 600px;
+}
+
+.navbar-custom {
+	background-color:#0165fc;
+    color:#ffffff;
+  	border-radius:0;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #fff;
+    color:#0165fc;
+}
+      
+.navbar-custom .navbar-brand {
+  	color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+  	background-color:#fff;
+}
+
+.languages > i {
+    font-size: 5em;
+}
+
+.languages > img {
+    width: 70px;
+    height: 70px;
+    margin-top: -50px;
+}
+
+.social {
+    position: relative;
+    height: 3em;
+    width: 17em;
+    margin: 75px 120px 135px 70px;
+}
+
+.social li {
+    display: block;
+    height: 7em;
+    width: 7em;
+    line-height: 6em;
+    margin: -2.2em;
+    position: absolute;
+    -webkit-transition: -webkit-transform .7s;
+    -moz-transition: -moz-transform .7s;
+    -ms-transition: -ms-transform .7s;
+    -o-transition: -o-transform .7s;
+    transition: transform .7s;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+}
+
+.social a {
+    color: #fffdf0;
+    display: block;
+    height: 3em;
+    width: 3em; 
+    line-height: 5.5em;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);  
+}
+
+.social li:hover {
+  -webkit-transform: scale(1.3,1.3) rotate(45deg);
+    -moz-transform: scale(1.3,1.3) rotate(45deg);
+  -ms-transform: scale(1.3,1.3) rotate(45deg);
+    -o-transform: scale(1.3,1.3) rotate(45deg);
+  transform: scale(1.3,1.3) rotate(45deg);
+}
+
+.linkedin {
+    background: #0077b5;
+    top: 0%;
+    left: 0%;
+}
+
+.linkedin:hover,
+.github:hover,
+.mail:hover,
+.facebook:hover,
+.twitter:hover,
+.whatsapp:hover,
+.skype:hover {
+    background: white;
+}
+
+.linkedin > a:hover {
+    color: #0077b5;
+}
+
+.github {
+    background: #333333;
+    top: 160%;
+    left: 40%;
+}
+
+.github > a:hover {
+    color: #333333;
+}
+
+.mail {
+    background: #ff5555;
+    top: 0%;
+    left: 80%;
+}
+
+.mail > a:hover {
+    color: #ff5555;
+}
+
+.facebook {
+    background: #3b5998;
+    top: 160%;
+    left: 120%;
+}
+
+.facebook > a:hover {
+    color: #3b5998;
+}
+
+.twitter {
+    background: #00aced;
+    top: 0%;
+    left: 160%;
+}
+
+.twitter > a:hover {
+    color: #00aced;
+}
+
+.whatsapp {
+    background: #43d854;
+    top: 160%;
+    left: 200%;
+}
+
+.whatsapp > a:hover {
+    color: #43d854;
+}
+
+.skype {
+    background: #00aff0;
+    top: 0%;
+    left: 240%;
+}
+
+.skype > a:hover{
+    color: #00aff0;
+}
+
+.containerRadio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerRadio input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerRadio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerRadio input:checked ~ .checkmark {
+    background-color:black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerRadio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerRadio .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* custom button */
+.button {
+    background-color: #0077b5;
+    border: none;
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    padding: 15px 32px;
+}
+
+.button:hover{
+    color: #0077b5;
+    background-color: white;
+}
+
+.selectDropDown{
+    width: 180px;
+    height: 30px;
+}
+
+
