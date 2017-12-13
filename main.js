@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var MongoClient   = require('mongodb').MongoClient,
   assert  = require('assert');
 
-var url = 'mongodb://const:04061991@ds133496.mlab.com:33496/lipsync'
+var url = 'mongodb://const:04061991@ds135196.mlab.com:35196/lipsync_part2'
 
 app.use(cookieParser('lipsync'));
 app.use(bodyParser.json());
